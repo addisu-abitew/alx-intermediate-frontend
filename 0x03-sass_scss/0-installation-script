@@ -1,0 +1,49 @@
+# Steps to Install Node.js 20.16 and SASS on Ubuntu
+
+1. **Install NVM (Node Version Manager)**
+   Run the following command in the terminal to install NVM:
+
+   ```bash
+   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+   ```
+
+2. **Restart the Terminal**
+   Exit the current terminal session:
+
+   ```bash
+   exit
+   ```
+
+   Then reopen the terminal to apply NVM changes.
+
+3. **Install Node.js Version 20.16 Using NVM**
+
+   ```bash
+   nvm install 20.16
+   nvm use 20.16
+   ```
+
+   Confirm installation:
+
+   ```bash
+   node -v
+   # Should output: v20.16.x
+   ```
+
+4. **Install SASS (Optional Step)**
+   With Node.js installed, run:
+
+   ```bash
+   npm install sass -v 3.7.4
+   ```
+
+   Verify installation:
+
+   ```bash
+   npx sass --version
+   ```
+
+# Notes
+
+* NVM allows you to switch between multiple Node.js versions easily.
+* SASS is a CSS preprocessor used for styling web applications.
