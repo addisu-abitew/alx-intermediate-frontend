@@ -1,0 +1,12 @@
+@mixin horizontal-margin($val) {
+    margin-left: $val;
+    margin-right: $val;
+}
+
+body {
+    @include horizontal-margin(10px)
+}
+
+div {
+    @include horizontal-margin(15px)
+}
